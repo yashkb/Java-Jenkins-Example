@@ -12,6 +12,7 @@ public class BaseTest {
 	@BeforeClass
 	public void setup()
 	{
+		System.out.println(driver);
 		driver = BrowserConfig.createDriver();
 		driver.get(TestConfig.getBaseUrl());
 	}
