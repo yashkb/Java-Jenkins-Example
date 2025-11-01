@@ -6,6 +6,7 @@
       <class name="testCases.FirstTest">
         <methods>
           <include name="TC_001"/>
+          <include name="globalSetup"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
