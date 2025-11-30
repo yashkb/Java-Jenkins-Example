@@ -18,20 +18,24 @@ public class ExcelReader {
 			int totalRows = sheet.getPhysicalNumberOfRows();
 			int totalColumns = sheet.getRow(0).getLastCellNum();
 			
-			Object[][] data = new Object[totalRows][totalColumns];
-			System.out.println("To tr "+totalRows);
+			Object[][] data = new Object[totalRows-1][totalColumns];
+			System.out.println("Total Rows (including header): " + totalRows);
+			
+			int dataIndex = 0;
 			for(int i=1;i<=totalRows;i++)
 			{
 				XSSFRow row = sheet.getRow(i);
-				if (row == null) {
+				
+				if (row == null || row.getCell(0) == null) {
 			        System.out.println("Skipping empty row: " + i);
 			        continue; // skip empty rows
 			    }
 				System.out.println(row);
 				for(int j =0;j<totalColumns;j++)
 				{
-					data[i-1][j]= row.getCell(j).toString();
+					data[dataIndex][j]= row.getCell(j).toString();
 				}
+				dataIndex++;
 			}
 			workbook.close();
 			file.close();
