@@ -30,15 +30,16 @@ public class BaseTest {
 	@BeforeClass
 	public void setup()
 	{
-		System.out.println(driver);
-		driver = BrowserConfig.createDriver();
-		driver.get(TestConfig.getBaseUrl());
+		
 		
 		
 	}
 	
 	@BeforeMethod
     public void methodSetup(ITestResult result) {
+		System.out.println(driver);
+		driver = BrowserConfig.createDriver();
+		driver.get(TestConfig.getBaseUrl());
         String testName = result.getMethod().getMethodName();
         System.out.println("▶️ [BaseTest] Starting test: " + testName);
         
@@ -87,6 +88,7 @@ public class BaseTest {
         // HOW: Removes test instances from both ThreadLocal and ExtentManager
         ExtentManager.removeTest();
         test.remove();
+        driver.quit();
     }
 	
 	public void waitForSeconds(int seconds) {
@@ -115,7 +117,7 @@ public class BaseTest {
 	@AfterClass
 	public void tearDown()
 	{
-		driver.quit();
+		
 	}
 	
 	protected void logPass(String message) {
