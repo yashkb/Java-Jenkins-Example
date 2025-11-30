@@ -5,9 +5,13 @@
     <classes>
       <class name="testCases.FirstTest">
         <methods>
-          <include name="TC_001"/>
+          <include name="TC_001" invocation-numbers="2"/>
           <include name="tearDown"/>
+          <include name="globalSetup"/>
+          <include name="methodTeardown"/>
+          <include name="globalTeardown"/>
           <include name="setup"/>
+          <include name="methodSetup"/>
         </methods>
       </class> <!-- testCases.FirstTest -->
     </classes>

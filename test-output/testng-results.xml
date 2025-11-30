@@ -1,24 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-24T21:19:56 IST" name="Default suite" finished-at="2025-10-24T21:20:00 IST" duration-ms="3800">
+  <suite started-at="2025-11-30T13:36:41 IST" name="Default suite" finished-at="2025-11-30T13:36:50 IST" duration-ms="9294">
     <groups>
     </groups>
-    <test started-at="2025-10-24T21:19:56 IST" name="Default test" finished-at="2025-10-24T21:20:00 IST" duration-ms="3800">
+    <test started-at="2025-11-30T13:36:41 IST" name="Default test" finished-at="2025-11-30T13:36:50 IST" duration-ms="9294">
       <class name="testCases.FirstTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.FirstTest@3023df74]" started-at="2025-10-24T21:19:56 IST" name="setup" finished-at="2025-10-24T21:20:00 IST" duration-ms="3484" status="PASS">
+        <test-method is-config="true" signature="globalSetup()[pri:0, instance:testCases.FirstTest@26794848]" started-at="2025-11-30T13:36:41 IST" name="globalSetup" finished-at="2025-11-30T13:36:41 IST" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- globalSetup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.FirstTest@26794848]" started-at="2025-11-30T13:36:41 IST" name="setup" finished-at="2025-11-30T13:36:43 IST" duration-ms="2101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC_001()[pri:0, instance:testCases.FirstTest@3023df74]" started-at="2025-10-24T21:20:00 IST" name="TC_001" finished-at="2025-10-24T21:20:00 IST" duration-ms="18" status="PASS">
+        <test-method is-config="true" signature="methodSetup(org.testng.ITestResult)[pri:0, instance:testCases.FirstTest@26794848]" started-at="2025-11-30T13:36:44 IST" name="methodSetup" finished-at="2025-11-30T13:36:44 IST" duration-ms="21" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=FirstTest.TC_001(java.lang.String)[pri:0, instance:testCases.FirstTest@26794848] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodSetup -->
+        <test-method signature="TC_001(java.lang.String)[pri:0, instance:testCases.FirstTest@26794848]" started-at="2025-11-30T13:36:44 IST" name="TC_001" data-provider="SearchData" finished-at="2025-11-30T13:36:47 IST" duration-ms="3096" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Yash]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_001 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.FirstTest@3023df74]" started-at="2025-10-24T21:20:00 IST" name="tearDown" finished-at="2025-10-24T21:20:00 IST" duration-ms="233" status="PASS">
+        <test-method is-config="true" signature="methodTeardown(org.testng.ITestResult)[pri:0, instance:testCases.FirstTest@26794848]" started-at="2025-11-30T13:36:47 IST" name="methodTeardown" finished-at="2025-11-30T13:36:47 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_001 status=SUCCESS method=FirstTest.TC_001(java.lang.String)[pri:0, instance:testCases.FirstTest@26794848] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodTeardown -->
+        <test-method is-config="true" signature="methodSetup(org.testng.ITestResult)[pri:0, instance:testCases.FirstTest@26794848]" started-at="2025-11-30T13:36:47 IST" name="methodSetup" finished-at="2025-11-30T13:36:47 IST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=FirstTest.TC_001(java.lang.String)[pri:0, instance:testCases.FirstTest@26794848] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodSetup -->
+        <test-method signature="TC_001(java.lang.String)[pri:0, instance:testCases.FirstTest@26794848]" started-at="2025-11-30T13:36:47 IST" name="TC_001" data-provider="SearchData" finished-at="2025-11-30T13:36:50 IST" duration-ms="3086" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Selenium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_001 -->
+        <test-method is-config="true" signature="methodTeardown(org.testng.ITestResult)[pri:0, instance:testCases.FirstTest@26794848]" started-at="2025-11-30T13:36:50 IST" name="methodTeardown" finished-at="2025-11-30T13:36:50 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_001 status=SUCCESS method=FirstTest.TC_001(java.lang.String)[pri:0, instance:testCases.FirstTest@26794848] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodTeardown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.FirstTest@26794848]" started-at="2025-11-30T13:36:50 IST" name="tearDown" finished-at="2025-11-30T13:36:50 IST" duration-ms="204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="globalTeardown()[pri:0, instance:testCases.FirstTest@26794848]" started-at="2025-11-30T13:36:50 IST" name="globalTeardown" finished-at="2025-11-30T13:36:51 IST" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- globalTeardown -->
       </class> <!-- testCases.FirstTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
